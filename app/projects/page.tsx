@@ -1,9 +1,20 @@
 import React from 'react';
 import { Navigation } from '../components/nav';
 import { Card } from '../components/card';
+import { Article } from './article';
+import Image from 'next/image';
+import { projectItems } from './projectItems';
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
+  const ProjectsList = () => {
+    return projectItems.map((project) => (
+      <Card>
+        <Article key={project.title} projectItem={project} />
+      </Card>
+    ));
+  };
+
   return (
     <div className='relative pb-16'>
       <Navigation />
@@ -18,28 +29,24 @@ export default async function ProjectsPage() {
         </div>
 
         <div className='w-full h-px bg-zinc-800' />
-
-        <div className='grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 '>
-          <Card></Card>
-          <div className='relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]'>
-            <div className='h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg'></div>
-            <div className='h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg'></div>
-            <div className='h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg'></div>
-            <div className='h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg'></div>
-
-            <div className='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800'>
-              <video
-                loop
-                autoPlay
-                playsInline
-                width={300}
-                height={600}
-                preload='none'
-                src=''
-              />
-            </div>
-          </div>
-
+        <div className='grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2'>
+          <ProjectsList />
+          {/* <iframe
+            width='267'
+            height='506'
+            src='https://www.youtube.com/embed/1x6y-Rdf1fY'
+          /> */}
+          {/* <video
+            className='phone-video'
+            autoPlay={true}
+            muted={true}
+            width='267'
+            height='506'
+            poster='https://plaid.com/assets/img/phones/screen1.png'
+            loop={true}
+            controls={true}
+            src={require('./medicines.mp4')}
+          /> */}
           <div className='flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 '></div>
         </div>
         <div className='hidden w-full h-px md:block bg-zinc-800' />

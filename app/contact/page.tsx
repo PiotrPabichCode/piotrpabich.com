@@ -19,9 +19,9 @@ const socials = [
   },
   {
     icon: <Linkedin size={20} />,
-    href: 'https://www.linkedin.com/in/piotr-pabich-346170274/',
+    href: 'https://www.linkedin.com/in/ppabich/',
     label: 'Linkedin',
-    handle: '@piotrpabich',
+    handle: '@ppabich',
   },
 ];
 
