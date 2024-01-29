@@ -2,7 +2,6 @@ import React from 'react';
 import { Navigation } from '../components/nav';
 import { Card } from '../components/card';
 import { Article } from './article';
-import Image from 'next/image';
 import { projectItems } from './projectItems';
 
 export const revalidate = 60;
@@ -31,22 +30,6 @@ export default async function ProjectsPage() {
         <div className='w-full h-px bg-zinc-800' />
         <div className='grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2'>
           <ProjectsList />
-          {/* <iframe
-            width='267'
-            height='506'
-            src='https://www.youtube.com/embed/1x6y-Rdf1fY'
-          /> */}
-          {/* <video
-            className='phone-video'
-            autoPlay={true}
-            muted={true}
-            width='267'
-            height='506'
-            poster='https://plaid.com/assets/img/phones/screen1.png'
-            loop={true}
-            controls={true}
-            src={require('./medicines.mp4')}
-          /> */}
           <div className='flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 '></div>
         </div>
         <div className='hidden w-full h-px md:block bg-zinc-800' />

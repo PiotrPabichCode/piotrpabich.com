@@ -7,4 +7,5 @@ export type ProjectItem = {
   date: string;
   repository: string;
   platform: PLATFORM;
+  techStack: string[];
 };

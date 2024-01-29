@@ -10,6 +10,16 @@ export const projectItems: ProjectItem[] = [
     url: 'SmartSenior',
     repository: 'https://github.com/PiotrPabichCode/SmartSenior',
     platform: PLATFORM.MOBILE,
+    techStack: [
+      'React Native',
+      'Expo Modules',
+      'EAS Build',
+      'Firebase',
+      'i18n.js',
+      'Redux Toolkit',
+      'Push Notifications',
+      'Formik + Yup',
+    ],
   },
   {
     title: 'JobFinder',
@@ -20,6 +30,7 @@ export const projectItems: ProjectItem[] = [
     repository:
       'https://github.com/PiotrPabichCode/react-native-fullstack-jobfinder',
     platform: PLATFORM.MOBILE,
+    techStack: [],
   },
   {
     title: 'TalkTactics',
@@ -29,6 +40,7 @@ export const projectItems: ProjectItem[] = [
     url: 'TalkTactics',
     repository: 'https://github.com/PiotrPabichCode/talk-tactics-fullstack',
     platform: PLATFORM.WEBSITE,
+    techStack: [],
   },
   {
     title: 'Bibliopolium',
@@ -39,5 +51,15 @@ export const projectItems: ProjectItem[] = [
     repository:
       'https://github.com/PiotrPabichCode/ecommerce-store-php-fullstack',
     platform: PLATFORM.WEBSITE,
+    techStack: [
+      'PHP',
+      'MySQL',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Cross Site Scripting | SQL Injection',
+      'CRUD operations',
+      'XAMPP',
+    ],
   },
 ];
