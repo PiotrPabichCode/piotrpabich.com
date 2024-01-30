@@ -30,7 +30,16 @@ export const projectItems: ProjectItem[] = [
     repository:
       'https://github.com/PiotrPabichCode/react-native-fullstack-jobfinder',
     platform: PLATFORM.MOBILE,
-    techStack: [],
+    techStack: [
+      'React Native',
+      'Expo Modules',
+      'EAS Build',
+      'Web Scrapper - ',
+      'Firebase',
+      'i18n.js',
+      'Redux Toolkit',
+      'Formik + Yup',
+    ],
   },
   {
     title: 'TalkTactics',
@@ -40,7 +49,16 @@ export const projectItems: ProjectItem[] = [
     url: 'TalkTactics',
     repository: 'https://github.com/PiotrPabichCode/talk-tactics-fullstack',
     platform: PLATFORM.WEBSITE,
-    techStack: [],
+    techStack: [
+      'ReactJS',
+      'React Router',
+      'PostgreSQL',
+      'Axios',
+      'i18Next',
+      'Spring Boot',
+      'Spring Security',
+      'JSON Web Tokens',
+    ],
   },
   {
     title: 'Bibliopolium',

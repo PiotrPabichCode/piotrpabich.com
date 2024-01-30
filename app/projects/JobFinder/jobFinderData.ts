@@ -1,3 +1,3 @@
 import { ProjectData } from '../models/ProjectData';
 
-export const talkTacticsData: ProjectData[] = [];
+export const jobFinderData: ProjectData[] = [];

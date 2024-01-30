@@ -16,14 +16,26 @@ export default async function WebsitePreview({
 }: Props) {
   const ProjectMapper = () => {
     return projectData.map((item) => {
-      return (
-        <>
-          <p className='text-4xl text-zinc-100 text-center'>{item.name}</p>
-          <div>
-            <Image src={item.image} alt={item.alt} />
+      if (item.url) {
+        return (
+          <div key={item.url}>
+            <p className='text-4xl text-zinc-100 text-center mb-4'>
+              {item.name}
+            </p>
+            <YoutubeEmbed url={item.url} />
           </div>
-        </>
-      );
+        );
+      } else if (item.image) {
+        return (
+          <>
+            <p className='text-4xl text-zinc-100 text-center'>{item.name}</p>
+            <div>
+              <Image src={item.image} alt={item.alt} />
+            </div>
+          </>
+        );
+      }
+      return null;
     });
   };
 
@@ -55,12 +67,6 @@ export default async function WebsitePreview({
         </div>
 
         <div className='w-full h-px bg-zinc-800' />
-        <YoutubeEmbed url='https://www.youtube.com/embed/1x6y-Rdf1fY' />
-        <YoutubeEmbed url='https://www.youtube.com/embed/1x6y-Rdf1fY' />
-        <YoutubeEmbed url='https://www.youtube.com/embed/1x6y-Rdf1fY' />
-        <YoutubeEmbed url='https://www.youtube.com/embed/1x6y-Rdf1fY' />
-        <YoutubeEmbed url='https://www.youtube.com/embed/1x6y-Rdf1fY' />
-        <YoutubeEmbed url='https://www.youtube.com/embed/1x6y-Rdf1fY' />
         <div className='grid w-full grid-cols-1 gap-8 items-center justify-center'>
           <ProjectMapper />
           <div className='flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 '></div>
