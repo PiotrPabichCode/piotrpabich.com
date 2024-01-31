@@ -1,18 +1,21 @@
 import React from 'react';
 import { Navigation } from '../../components/nav';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { ProjectItem } from '../models/ProjectItem';
 import { ProjectData } from '../models/ProjectData';
 import YoutubeEmbed from './YoutubeEmbed';
+import AppPreview from './AppPreview';
 
 type Props = {
   projectInformation: ProjectItem;
   projectData: ProjectData[];
+  projectPreview?: StaticImageData[];
 };
 
 export default async function WebsitePreview({
   projectInformation,
   projectData,
+  projectPreview,
 }: Props) {
   const ProjectMapper = () => {
     return projectData.map((item) => {
@@ -65,13 +68,24 @@ export default async function WebsitePreview({
             <TechStackMapper />
           </div>
         </div>
-
         <div className='w-full h-px bg-zinc-800' />
-        <div className='grid w-full grid-cols-1 gap-8 items-center justify-center'>
-          <ProjectMapper />
-          <div className='flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 '></div>
-        </div>
-        <div className='hidden w-full h-px md:block bg-zinc-800' />
+
+        {projectPreview && (
+          <>
+            <AppPreview images={projectPreview} />
+            <div className='w-full h-px bg-zinc-800' />
+          </>
+        )}
+
+        {projectData && projectData.length > 0 && (
+          <>
+            <div className='grid w-full grid-cols-1 gap-8 items-center justify-center'>
+              <ProjectMapper />
+              <div className='flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 '></div>
+            </div>
+            <div className='hidden w-full h-px md:block bg-zinc-800' />
+          </>
+        )}
 
         <div className='grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3'>
           <div className='grid grid-cols-1 gap-4'></div>
