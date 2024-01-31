@@ -1,6 +1,9 @@
+'use client';
 import Image from 'next/image';
 import { type WebsitePreviewItem } from '../models/WebsitePreviewItem';
 import YoutubeEmbed from './YoutubeEmbed';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 type Props = {
   websitePreviewItems?: WebsitePreviewItem[];
@@ -28,7 +31,9 @@ export default function WebsitePreview({ websitePreviewItems }: Props) {
                   {item.name}
                 </p>
                 <div>
-                  <Image src={item.image} alt={item.alt} />
+                  <Zoom>
+                    <Image src={item.image} alt={item.alt} />
+                  </Zoom>
                 </div>
               </div>
             );

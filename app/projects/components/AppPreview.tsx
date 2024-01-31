@@ -1,12 +1,12 @@
 import React from 'react';
-import { Navigation } from '../../components/nav';
+import { Navigation } from '@/app/components/nav';
+import Divider from '@/app/components/Divider';
 import { ProjectItem } from '../models/ProjectItem';
 import { WebsitePreviewItem } from '../models/WebsitePreviewItem';
 import MobileAppPreview from './MobileAppPreview';
 import { MobileAppPreviewItem } from '../models/MobileAppPreviewItem';
 import Link from 'next/link';
 import { Github } from 'lucide-react';
-import Divider from '@/app/components/Divider';
 import WebsitePreview from './WebsitePreview';
 type Props = {
   projectInformation: ProjectItem;
@@ -26,7 +26,7 @@ export default async function AppPreview({
   };
 
   return (
-    <div className='relative'>
+    <div className='relative pb-4 lg:pb-16'>
       <Navigation />
 
       <div className='px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32'>
