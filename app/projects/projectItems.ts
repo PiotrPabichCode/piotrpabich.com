@@ -52,12 +52,12 @@ export const projectItems: ProjectItem[] = [
     techStack: [
       'ReactJS',
       'React Router',
-      'PostgreSQL',
-      'Axios',
-      'i18Next',
       'Spring Boot',
       'Spring Security',
       'JSON Web Tokens',
+      'PostgreSQL',
+      'Axios',
+      'i18Next',
     ],
   },
   {
