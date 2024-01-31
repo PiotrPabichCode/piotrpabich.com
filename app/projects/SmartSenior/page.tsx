@@ -1,8 +1,7 @@
 import React from 'react';
 import { projectItems } from '../projectItems';
-import { smartSeniorData } from './smartSeniorData';
-import WebsitePreview from '../components/WebsitePreview';
-import { smartSeniorAppPreview } from './smartSeniorAppPreview';
+import AppPreview from '../components/AppPreview';
+import { SmartSeniorAppPreview } from './SmartSeniorMobileAppPreview';
 
 export default async function SmartSenior() {
   const projectInformation = projectItems.find(
@@ -10,10 +9,9 @@ export default async function SmartSenior() {
   )!;
 
   return (
-    <WebsitePreview
+    <AppPreview
       projectInformation={projectInformation}
-      projectData={smartSeniorData}
-      projectPreview={smartSeniorAppPreview}
+      mobileAppPreview={SmartSeniorAppPreview}
     />
   );
 }

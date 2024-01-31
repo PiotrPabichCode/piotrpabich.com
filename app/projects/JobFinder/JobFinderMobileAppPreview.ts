@@ -1,11 +1,11 @@
-import { AppPreviewItem } from '../models/AppPreviewItem';
+import { MobileAppPreviewItem } from '../models/MobileAppPreviewItem';
 import JobBoard from './assets/01.webp';
 import ExternalOffer from './assets/02.webp';
 import InternalOffer from './assets/03.webp';
 import ApplyInternalOffer from './assets/04.webp';
 import Account from './assets/05.webp';
 
-export const jobFinderAppPreview: AppPreviewItem[] = [
+export const JobFinderMobileAppPreview: MobileAppPreviewItem[] = [
   {
     image: JobBoard,
     alt: 'Job Finder Job Board',

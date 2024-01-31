@@ -1,6 +1,6 @@
 import { type StaticImageData } from 'next/image';
 
-export type AppPreviewItem = {
+export type MobileAppPreviewItem = {
   image: StaticImageData;
   alt: string;
 };

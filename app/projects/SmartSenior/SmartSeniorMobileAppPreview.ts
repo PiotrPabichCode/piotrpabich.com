@@ -1,11 +1,11 @@
-import { AppPreviewItem } from '../models/AppPreviewItem';
+import { MobileAppPreviewItem } from '../models/MobileAppPreviewItem';
 import HomePage from './assets/01.webp';
 import Events from './assets/02.webp';
 import Account from './assets/03.webp';
 import Keeper from './assets/04.webp';
 import Senior from './assets/05.webp';
 
-export const smartSeniorAppPreview: AppPreviewItem[] = [
+export const SmartSeniorAppPreview: MobileAppPreviewItem[] = [
   {
     image: HomePage,
     alt: 'Smart Senior Home Page',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { projectItems } from '../projectItems';
-import { bibliopoliumData } from './bibliopoliumData';
-import WebsitePreview from '../components/WebsitePreview';
+import { BibliopoliumWebsitePreview } from './BibliopoliumWebsitePreview';
+import AppPreview from '../components/AppPreview';
 
 export default async function Bibliopolium() {
   const projectInformation = projectItems.find(
@@ -9,9 +9,9 @@ export default async function Bibliopolium() {
   )!;
 
   return (
-    <WebsitePreview
+    <AppPreview
       projectInformation={projectInformation}
-      projectData={bibliopoliumData}
+      websitePreview={BibliopoliumWebsitePreview}
     />
   );
 }

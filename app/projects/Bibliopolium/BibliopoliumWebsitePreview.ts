@@ -1,4 +1,4 @@
-import { ProjectData } from '../models/ProjectData';
+import { type WebsitePreviewItem } from '../models/WebsitePreviewItem';
 import {
   Authorization,
   HomePage,
@@ -12,7 +12,7 @@ import {
   OrderDetails,
 } from './assets';
 
-export const bibliopoliumData: ProjectData[] = [
+export const BibliopoliumWebsitePreview: WebsitePreviewItem[] = [
   {
     name: 'Home Page',
     image: HomePage,

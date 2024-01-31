@@ -4,6 +4,8 @@ import LocalFont from 'next/font/local';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import ScrollToTopButton from './components/ScrollToTopButton';
+import Footer from './components/Footer';
 
 export const metadata: Metadata = {
   title: {
@@ -65,7 +67,11 @@ export default function RootLayout({
     <html lang='en' className={[inter.variable, calSans.variable].join(' ')}>
       <head></head>
       <body className={'bg-black'}>
-        {children} <Analytics /> <SpeedInsights />
+        <div className='relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900'>
+          {children} <Analytics /> <SpeedInsights />
+          <ScrollToTopButton />
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { projectItems } from '../projectItems';
-import { talkTacticsData } from './talkTacticsData';
-import WebsitePreview from '../components/WebsitePreview';
+import { TalkTacticsData } from './TalkTacticsData';
+import AppPreview from '../components/AppPreview';
 
 export default async function TalkTactics() {
   const projectInformation = projectItems.find(
@@ -9,9 +9,9 @@ export default async function TalkTactics() {
   )!;
 
   return (
-    <WebsitePreview
+    <AppPreview
       projectInformation={projectInformation}
-      projectData={talkTacticsData}
+      websitePreview={TalkTacticsData}
     />
   );
 }

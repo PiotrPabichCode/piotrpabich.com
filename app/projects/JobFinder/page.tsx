@@ -1,8 +1,7 @@
 import React from 'react';
 import { projectItems } from '../projectItems';
-import { jobFinderData } from './jobFinderData';
-import WebsitePreview from '../components/WebsitePreview';
-import { jobFinderAppPreview } from './jobFinderAppPreview';
+import AppPreview from '../components/AppPreview';
+import { JobFinderMobileAppPreview } from './JobFinderMobileAppPreview';
 
 export default async function JobFinder() {
   const projectInformation = projectItems.find(
@@ -10,10 +9,9 @@ export default async function JobFinder() {
   )!;
 
   return (
-    <WebsitePreview
+    <AppPreview
       projectInformation={projectInformation}
-      projectData={jobFinderData}
-      projectPreview={jobFinderAppPreview}
+      mobileAppPreview={JobFinderMobileAppPreview}
     />
   );
 }

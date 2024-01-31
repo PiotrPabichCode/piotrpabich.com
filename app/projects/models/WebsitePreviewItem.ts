@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image';
 
-export type ProjectData = {
+export type WebsitePreviewItem = {
   name: string;
   image?: StaticImageData;
   url?: string;

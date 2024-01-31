@@ -1,11 +1,11 @@
-import { type ProjectData } from '../models/ProjectData';
+import { type WebsitePreviewItem } from '../models/WebsitePreviewItem';
 import AddCourse from './assets/AddCourse.webp';
 import AdminPanel from './assets/AdminPanel.webp';
 import CourseDetails from './assets/CourseDetails.webp';
 import SingleWord from './assets/SingleWord.webp';
 import UserPanel from './assets/UserPanel.webp';
 
-export const talkTacticsData: ProjectData[] = [
+export const TalkTacticsData: WebsitePreviewItem[] = [
   {
     name: 'Add course',
     image: AddCourse,
