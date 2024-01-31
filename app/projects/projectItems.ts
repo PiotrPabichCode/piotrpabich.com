@@ -34,7 +34,7 @@ export const projectItems: ProjectItem[] = [
       'React Native',
       'Expo Modules',
       'EAS Build',
-      'Web Scrapper - ',
+      'Web Scrapper - Scrapy',
       'Firebase',
       'i18n.js',
       'Redux Toolkit',

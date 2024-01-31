@@ -1,9 +1,10 @@
 'use client';
 import Image, { StaticImageData } from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 type Props = {
   images: StaticImageData[];
@@ -14,10 +15,13 @@ export default function AppPreview({ images }: Props) {
     <>
       <div className='flex sm:hidden items-center justify-center w-full'>
         <Swiper
-          slidesPerView={1}
           grabCursor
-          navigation={true}
-          modules={[Navigation]}>
+          autoplay
+          navigation
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Navigation, Pagination, Autoplay]}>
           {images.map((image, id) => {
             return (
               <SwiperSlide
@@ -29,7 +33,7 @@ export default function AppPreview({ images }: Props) {
           })}
         </Swiper>
       </div>
-      <div className='hidden sm:flex flex-row w-full items-center justify-center gap-4'>
+      <div className='hidden sm:grid grid-cols-5 justify-center gap-4'>
         {images.map((image, id) => {
           return (
             <Image
