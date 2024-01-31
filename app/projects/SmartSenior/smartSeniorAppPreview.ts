@@ -1,14 +1,29 @@
-import { StaticImageData } from 'next/image';
-import HomePage from './assets/01.png';
-import Events from './assets/02.png';
-import Account from './assets/03.png';
-import Keeper from './assets/04.png';
-import Senior from './assets/05.png';
+import { AppPreviewItem } from '../models/AppPreviewItem';
+import HomePage from './assets/01.webp';
+import Events from './assets/02.webp';
+import Account from './assets/03.webp';
+import Keeper from './assets/04.webp';
+import Senior from './assets/05.webp';
 
-export const smartSeniorAppPreview: StaticImageData[] = [
-  HomePage,
-  Events,
-  Account,
-  Keeper,
-  Senior,
+export const smartSeniorAppPreview: AppPreviewItem[] = [
+  {
+    image: HomePage,
+    alt: 'Smart Senior Home Page',
+  },
+  {
+    image: Events,
+    alt: 'Smart Senior Events Page',
+  },
+  {
+    image: Account,
+    alt: 'Smart Senior Account Page',
+  },
+  {
+    image: Keeper,
+    alt: 'Smart Senior Keeper Page',
+  },
+  {
+    image: Senior,
+    alt: 'Smart Senior Senior Page',
+  },
 ];

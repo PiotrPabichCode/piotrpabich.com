@@ -1,16 +1,17 @@
 'use client';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { AppPreviewItem } from '../models/AppPreviewItem';
 
 type Props = {
-  images: StaticImageData[];
+  appPreviewItems: AppPreviewItem[];
 };
 
-export default function AppPreview({ images }: Props) {
+export default function AppPreview({ appPreviewItems }: Props) {
   return (
     <>
       <div className='flex sm:hidden items-center justify-center w-full'>
@@ -22,23 +23,28 @@ export default function AppPreview({ images }: Props) {
             clickable: true,
           }}
           modules={[Navigation, Pagination, Autoplay]}>
-          {images.map((image, id) => {
+          {appPreviewItems.map((item, id) => {
             return (
               <SwiperSlide
-                key={'SmartSeniorPreview' + id}
+                key={`AppPreviewSlide${id}`}
                 className='w-full items-center justify-center self-center'>
-                <Image src={image} alt={`SmartSeniorPreview${id}`} />
+                <Image
+                  key={`AppPreviewImage${id}`}
+                  src={item.image}
+                  alt={item.alt}
+                />
               </SwiperSlide>
             );
           })}
         </Swiper>
       </div>
       <div className='hidden sm:grid grid-cols-5 justify-center gap-4'>
-        {images.map((image, id) => {
+        {appPreviewItems.map((item) => {
           return (
             <Image
-              src={image}
-              alt={`SmartSeniorPreview${id}`}
+              key={`${item.alt} - Image`}
+              src={item.image}
+              alt={`${item.alt} - Image`}
               width={300}
               height={600}
             />

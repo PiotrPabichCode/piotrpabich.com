@@ -1,15 +1,17 @@
 import React from 'react';
 import { Navigation } from '../../components/nav';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import { ProjectItem } from '../models/ProjectItem';
 import { ProjectData } from '../models/ProjectData';
 import YoutubeEmbed from './YoutubeEmbed';
 import AppPreview from './AppPreview';
-
+import { AppPreviewItem } from '../models/AppPreviewItem';
+import Link from 'next/link';
+import { Github } from 'lucide-react';
 type Props = {
   projectInformation: ProjectItem;
   projectData: ProjectData[];
-  projectPreview?: StaticImageData[];
+  projectPreview?: AppPreviewItem[];
 };
 
 export default async function WebsitePreview({
@@ -51,6 +53,7 @@ export default async function WebsitePreview({
   return (
     <div className='relative pb-16'>
       <Navigation />
+
       <div className='px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32'>
         <div className='grid w-full grid-cols-1 lg:grid-cols-2'>
           <div className='max-w-2xl mx-auto mt-4'>
@@ -68,11 +71,18 @@ export default async function WebsitePreview({
             <TechStackMapper />
           </div>
         </div>
+        <div className='flex justify-center'>
+          <Link
+            href={projectInformation.repository}
+            className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'>
+            Repository <Github size={20} />
+          </Link>
+        </div>
         <div className='w-full h-px bg-zinc-800' />
 
         {projectPreview && (
           <>
-            <AppPreview images={projectPreview} />
+            <AppPreview appPreviewItems={projectPreview} />
             <div className='w-full h-px bg-zinc-800' />
           </>
         )}
