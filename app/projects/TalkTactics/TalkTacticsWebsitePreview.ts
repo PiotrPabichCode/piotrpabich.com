@@ -5,7 +5,7 @@ import CourseDetails from './assets/CourseDetails.webp';
 import SingleWord from './assets/SingleWord.webp';
 import UserPanel from './assets/UserPanel.webp';
 
-export const TalkTacticsData: WebsitePreviewItem[] = [
+export const TalkTacticsWebsitePreview: WebsitePreviewItem[] = [
   {
     name: 'Add course',
     image: AddCourse,

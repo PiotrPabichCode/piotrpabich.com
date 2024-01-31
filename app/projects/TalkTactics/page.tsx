@@ -1,6 +1,6 @@
 import React from 'react';
 import { projectItems } from '../projectItems';
-import { TalkTacticsData } from './TalkTacticsData';
+import { TalkTacticsWebsitePreview } from './TalkTacticsWebsitePreview';
 import AppPreview from '../components/AppPreview';
 
 export default async function TalkTactics() {
@@ -11,7 +11,7 @@ export default async function TalkTactics() {
   return (
     <AppPreview
       projectInformation={projectInformation}
-      websitePreview={TalkTacticsData}
+      websitePreview={TalkTacticsWebsitePreview}
     />
   );
 }
