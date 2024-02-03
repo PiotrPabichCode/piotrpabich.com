@@ -17,7 +17,6 @@ export default function YoutubeEmbed({ url }: Props) {
   });
 
   useEffect(() => {
-    console.log(inView, isLoaded);
     if (inView) {
       setIsLoaded(true);
 

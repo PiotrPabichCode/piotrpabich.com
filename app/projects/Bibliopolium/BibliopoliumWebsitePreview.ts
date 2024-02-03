@@ -21,46 +21,46 @@ export const BibliopoliumWebsitePreview: WebsitePreviewItem[] = [
   {
     name: 'Authorization',
     image: Authorization,
-    alt: 'Authorization page',
+    alt: 'Bibliopolium authorization page',
   },
   {
     name: 'Book',
     image: Book,
-    alt: 'Book details page',
+    alt: 'Bibliopolium book details page',
   },
   {
     name: 'Add book',
     image: AddBook,
-    alt: 'Add book page',
+    alt: 'Bibliopolium add book page',
   },
   {
     name: 'Edit book',
     image: EditBook,
-    alt: 'Edit book page',
+    alt: 'Bibliopolium edit book page',
   },
   {
     name: 'Users',
     image: Users,
-    alt: 'Users page',
+    alt: 'Bibliopolium users page',
   },
   {
     name: 'Cart',
     image: Cart,
-    alt: 'Cart page',
+    alt: 'Bibliopolium cart page',
   },
   {
     name: 'Favourites',
     image: Favourites,
-    alt: 'Favourite books page',
+    alt: 'Bibliopolium favourite books page',
   },
   {
     name: 'Orders',
     image: Orders,
-    alt: 'Orders page',
+    alt: 'Bibliopolium orders page',
   },
   {
     name: 'Order details',
     image: OrderDetails,
-    alt: 'Order details page',
+    alt: 'Bibliopolium order details page',
   },
 ];

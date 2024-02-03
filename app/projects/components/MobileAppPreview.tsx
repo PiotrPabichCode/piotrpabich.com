@@ -47,7 +47,6 @@ export default function MobileAppPreview({ mobileAppPreviewItems }: Props) {
             return (
               <Zoom key={`${item.alt} - Image`}>
                 <Image
-                  priority={!id}
                   src={item.image}
                   alt={`${item.alt} - Image`}
                   width={300}
