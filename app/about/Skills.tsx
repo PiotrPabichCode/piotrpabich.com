@@ -16,10 +16,10 @@ export default function Skills() {
   return (
     <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:justify-items-center'>
       <article className='block max-w-sm p-6 border border-gray-200 rounded-lg shadow overflow-hidden'>
-        <h5 className='mb-2 text-2xl font-bold tracking-tight text-zinc-100 text-center'>
+        <h2 className='mb-2 text-2xl font-bold tracking-tight text-zinc-100 text-center'>
           Frontend
-        </h5>
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-3 text-zinc-400'>
+        </h2>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
           <IconSkill image={HTML} name='HTML' alt='HTML' />
           <IconSkill image={CSS} name='CSS' alt='CSS' />
           <IconSkill image={JavaScript} name='JavaScript' alt='JavaScript' />
@@ -29,10 +29,10 @@ export default function Skills() {
         </div>
       </article>
       <article className='block max-w-sm p-6 border border-gray-200 rounded-lg shadow overflow-hidden'>
-        <h5 className='mb-2 text-2xl font-bold tracking-tight text-zinc-100 text-center'>
+        <h2 className='mb-2 text-2xl font-bold tracking-tight text-zinc-100 text-center'>
           Backend
-        </h5>
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-3 text-zinc-400'>
+        </h2>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
           <IconSkill image={Java} name='Java' alt='Java' />
           <IconSkill image={Hibernate} name='Hibernate' alt='Hibernate' />
           <IconSkill image={Spring} name='Spring Boot' alt='Spring Boot' />
@@ -46,10 +46,10 @@ export default function Skills() {
         </div>
       </article>
       <article className='block max-w-sm p-6 border border-gray-200 rounded-lg shadow overflow-hidden'>
-        <h5 className='mb-2 text-2xl font-bold tracking-tight text-zinc-100 text-center'>
+        <h2 className='mb-2 text-2xl font-bold tracking-tight text-zinc-100 text-center'>
           Testing
-        </h5>
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-3 text-zinc-400'>
+        </h2>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
           <IconSkill image={Java} name='Java' alt='Java' />
           <IconSkill image={Hibernate} name='Hibernate' alt='Hibernate' />
           <IconSkill image={Spring} name='Spring Boot' alt='Spring Boot' />

@@ -9,15 +9,32 @@ import Footer from './components/Footer';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Piotr Pabich - Fullstack Developer',
+    default: 'Piotr Pabich Fullstack Developer',
     template: '%s | piotrpabich.com',
   },
-  description: 'Fullstack Developer',
+  description: '%s | Piotr Pabich Fullstack Developer',
+  keywords: [
+    'Piotr Pabich',
+    'Fullstack Developer',
+    'Web Developer',
+    'Java Developer',
+    'React',
+    'React Native',
+    'JavaScript',
+    'TypeScript',
+    'Java',
+    'Spring',
+    'Spring Boot',
+    'Spring Security',
+    'Poland',
+    'Developer',
+  ],
   openGraph: {
-    title: 'piotrpabich.com',
-    description: 'Fullstack Developer',
+    type: 'website',
     url: 'https://piotrpabich.com',
-    siteName: 'piotrpabich.com',
+    title: 'Piotr Pabich',
+    description: 'Piotr Pabich Fullstack Developer',
+    siteName: 'Piotr Pabich',
     images: [
       {
         url: 'https://piotrpabich.com/og.png',
@@ -26,7 +43,6 @@ export const metadata: Metadata = {
       },
     ],
     locale: 'pl-PL',
-    type: 'website',
   },
   robots: {
     index: true,
