@@ -29,13 +29,11 @@ export default function About() {
               About me
             </h2>
             <p className='text-zinc-100 align-middle sm:mx-16 md:mx-0'>
-              I am a people-oriented person who loves engaging with others. Ever
-              since I was young, I have been involved in a sports club, which
-              has taught me the importance of hard work and always giving my
-              best. I thrive on challenges and have fantastic communication
-              skills that allow me to connect effortlessly with people.
-              Moreover, I'm incredibly adaptable and have a strong desire to
-              learn, which helps me adapt quickly to new circumstances.
+              As a people-oriented Fullstack Developer, I bring not only
+              technical expertise but also a strong focus on collaboration and
+              effective communication. Building positive relationships is at the
+              core of my approach, creating a harmonious and enjoyable work
+              atmosphere.
             </p>
           </article>
         </div>

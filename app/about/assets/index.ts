@@ -1,6 +1,7 @@
 import AndroidStudio from './AndroidStudio.svg';
 import C from './C.svg';
 import CPP from './CPP.svg';
+import CSharp from './CSharp.svg';
 import CSS from './CSS.svg';
 import Docker from './Docker.svg';
 import ExpressJS from './ExpressJS.svg';
@@ -12,6 +13,7 @@ import HTML from './HTML.svg';
 import Java from './Java.svg';
 import JavaScript from './JavaScript.svg';
 import Jenkins from './Jenkins.svg';
+import Jest from './Jest.svg';
 import Kotlin from './Kotlin.svg';
 import Linux from './Linux.svg';
 import MySQL from './MySQL.svg';
@@ -28,6 +30,7 @@ export {
   AndroidStudio,
   C,
   CPP,
+  CSharp,
   CSS,
   Docker,
   ExpressJS,
@@ -39,6 +42,7 @@ export {
   Java,
   JavaScript,
   Jenkins,
+  Jest,
   Kotlin,
   Linux,
   MySQL,
