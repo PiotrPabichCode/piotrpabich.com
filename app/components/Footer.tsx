@@ -1,4 +1,4 @@
-import Divider from './divider';
+import Divider from './Divider';
 
 export default function Footer() {
   return (

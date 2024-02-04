@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Me from './assets/me.webp';
 import WorkTimeline from './WorkTimeline';
 import EducationTimeline from './EducationTimeline';
-import Divider from '../components/divider';
+import Divider from '../components/Divider';
 import Skills from './Skills';
 
 export default function About() {

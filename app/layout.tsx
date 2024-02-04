@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import ScrollToTopButton from './components/ScrollToTopButton';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 
 export const metadata: Metadata = {
   title: {
