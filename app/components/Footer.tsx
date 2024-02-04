@@ -1,12 +1,12 @@
-import Divider from './Divider';
+import Divider from './divider';
 
 export default function Footer() {
   return (
     <>
       <Divider />
-      <div className='py-6'>
+      <footer className='py-6'>
         <p className='text-white text-center'>© 2024 Piotr Pabich</p>
-      </div>
+      </footer>
     </>
   );
 }

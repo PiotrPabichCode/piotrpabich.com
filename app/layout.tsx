@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import ScrollToTopButton from './components/ScrollToTopButton';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 
 export const metadata: Metadata = {
   title: {
@@ -28,6 +28,13 @@ export const metadata: Metadata = {
     'Spring Security',
     'Poland',
     'Developer',
+    'Programista',
+    'Polska',
+    'Lodz',
+    'Łódź',
+    'Olsztyn',
+    'Remote',
+    'Zdalnie',
   ],
   openGraph: {
     type: 'website',

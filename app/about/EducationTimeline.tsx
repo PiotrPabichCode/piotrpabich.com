@@ -1,7 +1,7 @@
 export default function EducationTimeline() {
   return (
     <div>
-      <h2 className='text-4xl text-zinc-100 text-center mb-10'>
+      <h2 className='text-2xl font-bold text-zinc-100 text-center mb-10'>
         Education Timeline
       </h2>
       <ol className='relative border-s border-zinc-200'>

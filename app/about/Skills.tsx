@@ -84,8 +84,8 @@ export default function Skills() {
         </h2>
         <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
           <IconSkill image={C} name='C' alt='C' />
-          <IconSkill image={CPP} name='CPP' alt='CPP' />
-          <IconSkill image={CSharp} name='CSharp' alt='CSharp' />
+          <IconSkill image={CPP} name='C++' alt='C++' />
+          <IconSkill image={CSharp} name='C#' alt='C#' />
           <IconSkill image={PHP} name='PHP' alt='PHP' />
         </div>
       </article>

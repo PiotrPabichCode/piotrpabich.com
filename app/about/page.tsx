@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Me from './assets/me.webp';
 import WorkTimeline from './WorkTimeline';
 import EducationTimeline from './EducationTimeline';
-import Divider from '../components/Divider';
+import Divider from '../components/divider';
 import Skills from './Skills';
 
 export default function About() {
@@ -15,9 +15,9 @@ export default function About() {
         <div className='grid md:grid-cols-2 gap-4 max-w-screen-md mx-auto items-center'>
           <div className='flex flex-col items-center overflow-hidden'>
             <Image
+              priority
               className='rounded mb-4'
               width={300}
-              height={400}
               src={Me}
               alt='Piotr Pabich'
             />
@@ -25,7 +25,7 @@ export default function About() {
             <h2 className='text-zinc-400 text-2xl'>Fullstack Developer</h2>
           </div>
           <article className='flex flex-col items-center text-center leading-loose'>
-            <h2 className='text-4xl text-zinc-100 text-center mb-4'>
+            <h2 className='text-2xl font-bold text-zinc-100 text-center mb-4'>
               About me
             </h2>
             <p className='text-zinc-100 align-middle sm:mx-16 md:mx-0'>
