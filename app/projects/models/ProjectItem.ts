@@ -5,7 +5,10 @@ export type ProjectItem = {
   url: string;
   description: string;
   date: string;
-  repository: string;
+  demoUrl?: string;
+  repository?: string;
+  frontendRepository?: string;
+  backendRepository?: string;
   platform: PLATFORM;
   techStack: string[];
 };

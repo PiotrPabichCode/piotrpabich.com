@@ -6,7 +6,7 @@ import { WebsitePreviewItem } from '../models/WebsitePreviewItem';
 import MobileAppPreview from './MobileAppPreview';
 import { MobileAppPreviewItem } from '../models/MobileAppPreviewItem';
 import Link from 'next/link';
-import { Github } from 'lucide-react';
+import { Github, Globe } from 'lucide-react';
 import WebsitePreview from './WebsitePreview';
 import Head from 'next/head';
 type Props = {
@@ -58,12 +58,35 @@ export default async function AppPreview({
               <TechStackMapper />
             </div>
           </div>
-          <div className='flex justify-center'>
-            <Link
-              href={projectInformation.repository}
-              className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'>
-              Repository <Github size={20} />
-            </Link>
+          <div className='flex justify-center gap-4'>
+            {projectInformation.backendRepository && (
+              <Link
+                href={projectInformation.backendRepository}
+                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'>
+                Backend <Github size={20} />
+              </Link>
+            )}
+            {projectInformation.demoUrl && (
+              <Link
+                href={projectInformation.demoUrl}
+                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'>
+                Demo <Globe size={20} />
+              </Link>
+            )}
+            {projectInformation.frontendRepository && (
+              <Link
+                href={projectInformation.frontendRepository}
+                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'>
+                Frontend <Github size={20} />
+              </Link>
+            )}
+            {projectInformation.repository && (
+              <Link
+                href={projectInformation.repository}
+                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'>
+                Repository <Github size={20} />
+              </Link>
+            )}
           </div>
           <Divider />
 

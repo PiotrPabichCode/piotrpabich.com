@@ -26,7 +26,7 @@ export default function WebsitePreview({ websitePreviewItems }: Props) {
             );
           } else if (item.image) {
             return (
-              <div key={item.url}>
+              <div key={item.alt} className='items-center'>
                 <p className='text-2xl lg:text-4xl mb-2 lg:mb-4 text-zinc-100 text-center'>
                   {item.name}
                 </p>

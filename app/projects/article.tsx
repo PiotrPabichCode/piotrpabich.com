@@ -7,7 +7,15 @@ type Props = {
 };
 
 export const Article: React.FC<Props> = ({
-  projectItem: { title, date, description, repository, url },
+  projectItem: {
+    title,
+    date,
+    description,
+    repository,
+    frontendRepository,
+    backendRepository,
+    url,
+  },
 }) => {
   return (
     <Link href={`/projects/${url}`}>
@@ -22,11 +30,27 @@ export const Article: React.FC<Props> = ({
             {date}
             {' -'}
           </span>
-          <Link
-            href={repository}
-            className='flex items-center text-sky-500 hover:underline'>
-            <Github color='white' className='hover:stroke-sky-500' />
-          </Link>
+          {repository && (
+            <Link
+              href={repository}
+              className='flex items-center text-sky-500 hover:underline'>
+              <Github color='white' className='hover:stroke-sky-500' />
+            </Link>
+          )}
+          {backendRepository && (
+            <Link
+              href={backendRepository}
+              className='flex items-center text-sky-500 hover:underline'>
+              <Github color='white' className='hover:stroke-sky-500' />
+            </Link>
+          )}
+          {frontendRepository && (
+            <Link
+              href={frontendRepository}
+              className='flex items-center text-sky-500 hover:underline'>
+              <Github color='white' className='hover:stroke-sky-500' />
+            </Link>
+          )}
         </div>
         <h2 className='z-20 text-2xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display'>
           {title}

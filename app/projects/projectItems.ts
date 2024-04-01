@@ -3,6 +3,31 @@ import { ProjectItem } from './models/ProjectItem';
 
 export const projectItems: ProjectItem[] = [
   {
+    title: 'TalkTactics',
+    date: '05-03-2024',
+    description:
+      'Language-learning app for mastering English words and their definitions, featuring role-based access, light/dark mode, query caching, and a separated backend. For backend development I used Spring Boot / Spring Security with Json Web Tokens authorization. For frontend development I decided to use Next.js 14 with App Router with combination of React Query (caching / better performance), Zod / React Hook Form (validation, better user experience), Zustand and more.',
+    url: 'TalkTactics',
+    frontendRepository:
+      'https://github.com/PiotrPabichCode/talk-tactics-frontend-nextjs',
+    backendRepository:
+      'https://github.com/PiotrPabichCode/talk-tactics-backend-springboot',
+    demoUrl: 'https://talk-tactics-frontend.vercel.app/',
+    platform: PLATFORM.WEBSITE,
+    techStack: [
+      'Spring Boot',
+      'Spring Security',
+      'JSON Web Tokens',
+      'PostgreSQL',
+      'NextJS',
+      'App Router',
+      'React Query',
+      'Zustand',
+      'Zod',
+      'Axios',
+    ],
+  },
+  {
     title: 'SmartSenior',
     date: '05-01-2024',
     description:
@@ -39,25 +64,6 @@ export const projectItems: ProjectItem[] = [
       'i18n.js',
       'Redux Toolkit',
       'Formik + Yup',
-    ],
-  },
-  {
-    title: 'TalkTactics',
-    date: '20-06-2023',
-    description:
-      'A fullstack website designed to help users learn the most popular words in English. Application written in frontend(React.js) / backend(Spring, PostgreSQL). Division into roles (ADMIN, USER). Authorization using Spring Security and JSON Web Tokens. Data management with CRUD operations. Internationalization (PL - ENG) with i18Next.',
-    url: 'TalkTactics',
-    repository: 'https://github.com/PiotrPabichCode/talk-tactics-fullstack',
-    platform: PLATFORM.WEBSITE,
-    techStack: [
-      'ReactJS',
-      'React Router',
-      'Spring Boot',
-      'Spring Security',
-      'JSON Web Tokens',
-      'PostgreSQL',
-      'Axios',
-      'i18Next',
     ],
   },
   {
