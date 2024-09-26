@@ -9,8 +9,8 @@ export const revalidate = 60;
 export default async function ProjectsPage() {
   const ProjectsList = () => {
     return projectItems.map((project) => (
-      <Card>
-        <Article key={project.title} projectItem={project} />
+      <Card key={project.title}>
+        <Article projectItem={project} />
       </Card>
     ));
   };
