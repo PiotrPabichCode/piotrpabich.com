@@ -93,7 +93,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={[inter.variable, calSans.variable].join(' ')}>
+    <html lang='en' className={`${inter.variable} ${calSans.variable} scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-zinc-400`}>
       <head></head>
       <body className={'bg-black'}>
         <div className='relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900'>
