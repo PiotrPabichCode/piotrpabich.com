@@ -2,10 +2,10 @@
 import { Navigation } from '../components/nav';
 import Image from 'next/image';
 import Me from './assets/me.webp';
-import WorkTimeline from './WorkTimeline';
-import EducationTimeline from './EducationTimeline';
-import Divider from '../components/Divider';
-import Skills from './Skills';
+import WorkTimeline from './components/work-timeline';
+import EducationTimeline from './components/education-timeline';
+import Divider from '../components/divider';
+import Skills from './components/skills';
 
 export default function About() {
   return (

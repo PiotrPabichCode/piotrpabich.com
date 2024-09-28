@@ -4,8 +4,8 @@ import LocalFont from 'next/font/local';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import ScrollToTopButton from './components/ScrollToTopButton';
-import Footer from './components/Footer';
+import ScrollToTopButton from './components/scroll-to-top-button';
+import Footer from './components/footer';
 
 export const metadata: Metadata = {
   title: {
@@ -93,7 +93,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={`${inter.variable} ${calSans.variable} scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-zinc-400`}>
+    <html
+      lang='en'
+      className={`${inter.variable} ${calSans.variable} scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-zinc-400`}>
       <head></head>
       <body className={'bg-black'}>
         <div className='relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900'>

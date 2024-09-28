@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigation } from '@/app/components/nav';
-import Divider from '@/app/components/Divider';
+import Divider from '@/app/components/divider';
 import { ProjectItem } from '../models/ProjectItem';
 import { WebsitePreviewItem } from '../models/WebsitePreviewItem';
 import MobileAppPreview from './MobileAppPreview';

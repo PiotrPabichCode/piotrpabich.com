@@ -1,10 +1,8 @@
-import AndroidStudio from './AndroidStudio.svg';
 import C from './C.svg';
 import CPP from './CPP.svg';
 import CSharp from './CSharp.svg';
 import CSS from './CSS.svg';
 import Docker from './Docker.svg';
-import ExpressJS from './ExpressJS.svg';
 import Firebase from './Firebase.svg';
 import Git from './Git.svg';
 import Github from './Github.svg';
@@ -25,15 +23,21 @@ import Redux from './Redux.svg';
 import Selenium from './Selenium.svg';
 import Spring from './Spring.svg';
 import TypeScript from './TypeScript.svg';
+import MongoDB from './MongoDB.svg';
+import Grafana from './Grafana.svg';
+import Kubernetes from './Kubernetes.svg';
+import Kafka from './Kafka.svg';
+import AWS from './AWS.svg';
+import Prometheus from './Prometheus.svg';
+import Gradle from './Gradle.svg';
+import NestJS from './NestJS.svg';
 
 export {
-  AndroidStudio,
   C,
   CPP,
   CSharp,
   CSS,
   Docker,
-  ExpressJS,
   Firebase,
   Git,
   Github,
@@ -54,4 +58,12 @@ export {
   Selenium,
   Spring,
   TypeScript,
+  MongoDB,
+  Grafana,
+  Kubernetes,
+  Kafka,
+  AWS,
+  Prometheus,
+  Gradle,
+  NestJS,
 };

@@ -3,7 +3,7 @@ import { Navigation } from '../components/nav';
 import { Card } from '../components/card';
 import { Article } from './article';
 import { projectItems } from './projectItems';
-import Divider from '../components/Divider';
+import Divider from '../components/divider';
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
