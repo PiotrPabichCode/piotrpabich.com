@@ -3,7 +3,7 @@ import { Navigation } from '../components/nav';
 import Image from 'next/image';
 import Me from './assets/me.webp';
 import WorkTimeline from './components/work-timeline';
-import EducationTimeline from './components/education-timeline';
+import EducationTimeline from './components/education-timeline/education-timeline';
 import Divider from '../components/divider';
 import Skills from './components/skills';
 
