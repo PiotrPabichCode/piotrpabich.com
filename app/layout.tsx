@@ -9,12 +9,13 @@ import Footer from './components/footer';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Piotr Pabich Fullstack Developer',
+    default: 'Piotr Pabich Software Engineer',
     template: '%s | piotrpabich.com',
   },
-  description: '%s | Piotr Pabich Fullstack Developer',
+  description: '%s | Piotr Pabich Software Engineer',
   keywords: [
     'Piotr Pabich',
+    'Software Engineer',
     'Fullstack Developer',
     'Frontend',
     'Backend',
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://piotrpabich.com',
     title: 'Piotr Pabich',
-    description: 'Piotr Pabich Fullstack Developer',
+    description: 'Piotr Pabich Software Engineer',
     siteName: 'Piotr Pabich',
     images: [
       {
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: 'Piotr Pabich',
-    description: 'Fullstack Developer',
+    description: 'Software Engineer',
     card: 'summary_large_image',
   },
   icons: {
@@ -95,11 +96,14 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={`${inter.variable} ${calSans.variable} scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-zinc-400`}>
+      className={`${inter.variable} ${calSans.variable} scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-zinc-400`}
+    >
       <head></head>
       <body className={'bg-black'}>
         <div className='relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900'>
-          {children} <Analytics /> <SpeedInsights />
+          {children}
+          <Analytics />
+          <SpeedInsights />
           <ScrollToTopButton />
           <Footer />
         </div>

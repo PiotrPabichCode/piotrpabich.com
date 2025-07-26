@@ -22,18 +22,19 @@ export default function About() {
               alt='Piotr Pabich'
             />
             <h1 className='text-zinc-100 text-4xl'>Piotr Pabich</h1>
-            <h2 className='text-zinc-400 text-2xl'>Fullstack Developer</h2>
+            <h2 className='text-zinc-400 text-2xl'>Software Engineer</h2>
           </div>
           <article className='flex flex-col items-center text-center leading-loose'>
             <h2 className='text-2xl font-bold text-zinc-100 text-center mb-4'>
               About me
             </h2>
             <p className='text-zinc-100 align-middle sm:mx-16 md:mx-0'>
-              As a people-oriented Fullstack Developer, I bring not only
-              technical expertise but also a strong focus on collaboration and
-              effective communication. Building positive relationships is at the
-              core of my approach, creating a harmonious and enjoyable work
-              atmosphere.
+              From my point of view high-quality software is built through clear
+              communication, seamless collaboration, and clean, maintainable
+              code. I enjoy working in teams where ideas are shared openly and
+              everyone supports each other’s growth. A positive team culture not
+              only improves the work atmosphere, but leads to more reliable,
+              scalable solutions.
             </p>
           </article>
         </div>

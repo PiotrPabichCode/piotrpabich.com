@@ -8,7 +8,7 @@ export default function EducationTimeline() {
       </h2>
       <ol className='mb-4 relative border-s border-zinc-200'>
         <EducationItem
-          timeline='September 2024 - now'
+          timeline='October 2024 - now'
           title='Lodz University of Technology'
           details={[
             'Faculty of Electrical, Electronic, Computer and Control Engineering',

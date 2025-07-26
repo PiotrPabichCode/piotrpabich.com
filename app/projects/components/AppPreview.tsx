@@ -31,11 +31,11 @@ export default async function AppPreview({
       <Head>
         <meta
           name='title'
-          content={`${projectInformation.title} Piotr Pabich Fullstack Developer`}
+          content={`${projectInformation.title} Piotr Pabich Software Engineer`}
         />
         <meta
           name='description'
-          content={`${projectInformation.description} Piotr Pabich Fullstack Developer`}
+          content={`${projectInformation.description} Piotr Pabich Software Engineer`}
         />
       </Head>
       <div className='relative pb-4 lg:pb-16'>
@@ -62,28 +62,32 @@ export default async function AppPreview({
             {projectInformation.backendRepository && (
               <Link
                 href={projectInformation.backendRepository}
-                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'>
+                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'
+              >
                 Backend <Github size={20} />
               </Link>
             )}
             {projectInformation.demoUrl && (
               <Link
                 href={projectInformation.demoUrl}
-                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'>
+                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'
+              >
                 Demo <Globe size={20} />
               </Link>
             )}
             {projectInformation.frontendRepository && (
               <Link
                 href={projectInformation.frontendRepository}
-                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'>
+                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'
+              >
                 Frontend <Github size={20} />
               </Link>
             )}
             {projectInformation.repository && (
               <Link
                 href={projectInformation.repository}
-                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'>
+                className='flex flex-row gap-2 items-center justify-center text-xl text-blue-400 hover:text-blue-700'
+              >
                 Repository <Github size={20} />
               </Link>
             )}
