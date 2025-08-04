@@ -8,21 +8,40 @@ export default function WorkTimeline() {
       </h2>
       <ol className='mb-4 relative border-s border-zinc-200'>
         <WorkItem
+          timeline='June 2024 - Present | Software Engineer'
+          companyName='Naviparking Sp. z o.o.'
+          companyUrl='https://www.naviparking.com/'
+          description='Delivering large-scale projects for enterprise clients, focusing on seamless integration with external Parking Management Systems (PMS) with zero downtime. Developing scalable, maintainable software services from the ground up, leveraging Spring Framework, Nest.js, and AWS, with containerized deployments using Kubernetes. Automated CI/CD pipelines using GitLab for efficient, reliable releases and collaborated in cross-functional, multi-lingual teams across Europe and the Middle East.'
+          technologies={[
+            'Java / Kotlin / TypeScript',
+            'Spring Framework / Nest.js',
+            'AWS (EC2, SQS, Lambda, S3, SES, MSK / Kafka)',
+            'Kubernetes / Docker',
+            'Microservices architecture',
+            'CI / CD (Gitlab pipelines, ArgoCD)',
+            'Integrations with external PMS (Parking Management Systems)',
+            'Observability (Prometheus, Grafana, Micrometer, Slack, OpenSearch)',
+            'PostgreSQL / MongoDB / Redis',
+          ]}
+        />
+        <WorkItem
           timeline='July 2023 - October 2023 | Fullstack Java Developer'
           companyName='Firmao Polska Sp. z o.o. Łódź'
-          description='I was involved in the development of a CRM system that facilitates
-            easy business management in multiple languages. My primary
-            responsibility was to support and enhance the system based on user
-            requirements and needs. One of the major projects I worked on
-            involved expanding the system to support the French language.'
+          companyUrl='https://firmao.pl/'
+          description='Contributed to the enhancement of a cloud-based CRM/ERP platform by
+            developing new features and optimizing modules for business process
+            automation, invoicing, and project management. Supported the expansion
+            of multilingual capabilities, including the integration of French language
+            support to improve accessibility for international users'
           technologies={[
-            'JavaScript',
-            'Java',
-            'Spring Boot / Spring Security',
-            'Selenium',
-            'Jenkins',
-            'Phabricator',
-            'TortoiseHg',
+            'Java / TypeScript',
+            'Spring Framework',
+            'React.js / Next.js',
+            'PostgreSQL / MongoDB',
+            'Docker',
+            'CI / CD (Jenkins)',
+            'Internal CRM System',
+            'AWS (SES, S3, SQS)',
           ]}
         />
       </ol>

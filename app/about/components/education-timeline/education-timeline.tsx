@@ -8,8 +8,9 @@ export default function EducationTimeline() {
       </h2>
       <ol className='mb-4 relative border-s border-zinc-200'>
         <EducationItem
-          timeline='October 2024 - now'
+          timeline='October 2024 - (ongoing) February 2026'
           title='Lodz University of Technology'
+          titleUrl='https://weeia.p.lodz.pl/en'
           details={[
             'Faculty of Electrical, Electronic, Computer and Control Engineering',
             'Major: Computer Science',
@@ -20,6 +21,7 @@ export default function EducationTimeline() {
         <EducationItem
           timeline='October 2020 - February 2024'
           title='Lodz University of Technology'
+          titleUrl='https://weeia.p.lodz.pl/en'
           details={[
             'Faculty of Electrical, Electronic, Computer and Control Engineering',
             'Major: Computer Science',
